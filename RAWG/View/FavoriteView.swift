@@ -27,7 +27,7 @@ struct FavoriteView: View {
                     Text("No Favorite Found")
                         .font(.system(size: 24))
                 }
-            }.navigationTitle("Favorite Game")
+            }.navigationTitle("Favorite Games")
         }
     }
 }

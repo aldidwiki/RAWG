@@ -33,7 +33,7 @@ class RealmManager: ObservableObject {
     func addTask(
         id: Int,
         title: String,
-        releaseDate: String,
+        releaseDate: Date,
         rating: Double,
         image: String,
         completion: @escaping () -> Void

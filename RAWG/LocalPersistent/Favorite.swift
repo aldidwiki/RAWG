@@ -11,7 +11,7 @@ import RealmSwift
 class Favorite: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: Int
     @Persisted var title: String
-    @Persisted var releaseDate: String
+    @Persisted var releaseDate: Date
     @Persisted var rating: Double
     @Persisted var image: String
     
@@ -20,7 +20,7 @@ class Favorite: Object, ObjectKeyIdentifiable {
             title: title,
             rating: rating,
             imageUrl: URL(string: image)!,
-            releaseDate: Date(),
+            releaseDate: releaseDate,
             id: self.id)
     }
 }

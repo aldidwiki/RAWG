@@ -33,10 +33,11 @@ struct GameDetailView: View {
                         
                         Text(gameDetail.title)
                             .font(.system(size: 24))
+                            .multilineTextAlignment(.center)
                             .fontWeight(.bold)
                             .padding(.top, 10)
                         
-                        Text(self.formattedDate())
+                        Text(gameDetail.releaseDate.formatDateToString(format: "dd MMMM yyyy"))
                             .font(.system(size: 18))
                         
                         Text(String(gameDetail.rating))
@@ -80,7 +81,7 @@ struct GameDetailView: View {
                         realmManager.addTask(
                             id: gameId,
                             title: gameDetail.title,
-                            releaseDate: formattedDate(),
+                            releaseDate: gameDetail.releaseDate,
                             rating: gameDetail.rating,
                             image: gameDetail.imageUrl.absoluteString
                         ) {
@@ -92,12 +93,6 @@ struct GameDetailView: View {
                 
             }
         }
-    }
-    
-    private func formattedDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMMM yyyy"
-        return dateFormatter.string(from: gameDetail.releaseDate)
     }
 }
 

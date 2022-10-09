@@ -25,19 +25,13 @@ struct GameItemView: View {
                     .fontWeight(.bold)
                     .lineLimit(2)
                 
-                Text(self.formattedDate())
+                Text(game.releaseDate.formatDateToString(format: "dd MMM yyyy"))
             }
             .padding(.leading)
             
             Spacer()
             Text(String(game.rating))
         }
-    }
-    
-    private func formattedDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMM yyyy"
-        return dateFormatter.string(from: game.releaseDate)
     }
 }
 

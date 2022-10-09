@@ -64,9 +64,7 @@ struct GameResponseModel: Codable {
         self.imageUrl = URL(string: url)!
         
         let dateString = try container.decode(String.self, forKey: .releaseDate)
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        self.releaseDate = dateFormatter.date(from: dateString)!
+        self.releaseDate = dateString.formatStringToDate(format: "yyyy-MM-dd")
     }
 }
 

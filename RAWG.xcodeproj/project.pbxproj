@@ -12,7 +12,7 @@
 		CE12E0C228F199CC00C7874E /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0C128F199CC00C7874E /* RealmManager.swift */; };
 		CE12E0C428F19AC500C7874E /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0C328F19AC500C7874E /* Favorite.swift */; };
 		CE12E0C628F1A0E200C7874E /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0C528F1A0E200C7874E /* FavoriteView.swift */; };
-		CE2338E828F268210034786A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2338E728F268210034786A /* Extensions.swift */; };
+		CE892DA028F26DB800B76E0E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE892D9F28F26DB800B76E0E /* Extensions.swift */; };
 		CEC1482828F11ACE0058173E /* RAWGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1482728F11ACE0058173E /* RAWGApp.swift */; };
 		CEC1482A28F11ACE0058173E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1482928F11ACE0058173E /* ContentView.swift */; };
 		CEC1482C28F11ACE0058173E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1482B28F11ACE0058173E /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 		CE12E0C128F199CC00C7874E /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		CE12E0C328F19AC500C7874E /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		CE12E0C528F1A0E200C7874E /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		CE2338E728F268210034786A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../Extensions.swift; sourceTree = "<group>"; };
+		CE892D9F28F26DB800B76E0E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CEC1482428F11ACE0058173E /* RAWG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAWG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC1482728F11ACE0058173E /* RAWGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAWGApp.swift; sourceTree = "<group>"; };
 		CEC1482928F11ACE0058173E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		CE2338E628F2680C0034786A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				CE2338E728F268210034786A /* Extensions.swift */,
+				CE892D9F28F26DB800B76E0E /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -234,10 +234,10 @@
 				CEC1484228F11EE30058173E /* GameDetailModel.swift in Sources */,
 				CE12E0C628F1A0E200C7874E /* FavoriteView.swift in Sources */,
 				CEC1484028F11EE30058173E /* GameModel.swift in Sources */,
+				CE892DA028F26DB800B76E0E /* Extensions.swift in Sources */,
 				CEC1484C28F135550058173E /* GameDetailView.swift in Sources */,
 				CE12E0C228F199CC00C7874E /* RealmManager.swift in Sources */,
 				CEC1482828F11ACE0058173E /* RAWGApp.swift in Sources */,
-				CE2338E828F268210034786A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    private let networkService = NetworkService()
+    
     @EnvironmentObject var realmManager: RealmManager
     
     @State var games = [Game]()
     @State var isLoading = true
     @State var isError = false
+    @State var searchFor = ""
     
     var body: some View {
         NavigationView {
@@ -29,11 +32,30 @@ struct HomeView: View {
                         }
                     }
                 }
-            }.task {
-                let networkService = NetworkService()
+            }.onChange(of: searchFor, perform: { _ in
+                Task {
+                    isLoading = true
+                    do {
+                        if searchFor.isEmpty {
+                            self.games = try await networkService.getGames()
+                        } else {
+                            self.games = try await networkService.getGames(searchQuery: searchFor)
+                        }
+                        isLoading = false
+                        isError = false
+                    } catch {
+                        isLoading = false
+                        isError = true
+                    }
+                }
+            }).task {
                 isLoading = true
                 do {
-                    self.games = try await networkService.getGames()
+                    if searchFor.isEmpty {
+                        self.games = try await networkService.getGames()
+                    } else {
+                        self.games = try await networkService.getGames(searchQuery: searchFor)
+                    }
                     isLoading = false
                     isError = false
                 } catch {
@@ -44,7 +66,7 @@ struct HomeView: View {
                 Button("OK", role: .cancel) {}
             }
             .navigationTitle("Popular Games")
-        }
+        }.searchable(text: $searchFor, placement: .automatic)
     }
 }
 

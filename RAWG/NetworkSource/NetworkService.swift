@@ -12,12 +12,13 @@ class NetworkService {
     let page = "1"
     let pageSize = "15"
     
-    func getGames() async throws -> [Game] {
+    func getGames(searchQuery: String? = nil) async throws -> [Game] {
         var components = URLComponents(string: "https://api.rawg.io/api/games")!
         components.queryItems = [
             URLQueryItem(name: "key", value: apiKey),
             URLQueryItem(name: "page", value: page),
-            URLQueryItem(name: "page_size", value: pageSize)
+            URLQueryItem(name: "page_size", value: pageSize),
+            URLQueryItem(name: "search", value: searchQuery)
         ]
         
         let request = URLRequest(url: components.url!)

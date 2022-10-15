@@ -20,7 +20,6 @@
 		CEC1484028F11EE30058173E /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1483C28F11EE30058173E /* GameModel.swift */; };
 		CEC1484128F11EE30058173E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1483D28F11EE30058173E /* NetworkService.swift */; };
 		CEC1484228F11EE30058173E /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1483E28F11EE30058173E /* GameDetailModel.swift */; };
-		CEC1484328F11EE30058173E /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1483F28F11EE30058173E /* ImageDownloader.swift */; };
 		CEC1484628F11FA30058173E /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1484528F11FA30058173E /* GameItemView.swift */; };
 		CEC1484828F130F30058173E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1484728F130F30058173E /* HomeView.swift */; };
 		CEC1484A28F132710058173E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1484928F132710058173E /* ProfileView.swift */; };
@@ -40,7 +39,6 @@
 		CEC1483C28F11EE30058173E /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		CEC1483D28F11EE30058173E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CEC1483E28F11EE30058173E /* GameDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
-		CEC1483F28F11EE30058173E /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		CEC1484528F11FA30058173E /* GameItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemView.swift; sourceTree = "<group>"; };
 		CEC1484728F130F30058173E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CEC1484928F132710058173E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			children = (
 				CEC1483E28F11EE30058173E /* GameDetailModel.swift */,
 				CEC1483C28F11EE30058173E /* GameModel.swift */,
-				CEC1483F28F11EE30058173E /* ImageDownloader.swift */,
 				CEC1483D28F11EE30058173E /* NetworkService.swift */,
 			);
 			path = NetworkSource;
@@ -230,7 +227,6 @@
 				CEC1484628F11FA30058173E /* GameItemView.swift in Sources */,
 				CE12E0C428F19AC500C7874E /* Favorite.swift in Sources */,
 				CEC1482A28F11ACE0058173E /* ContentView.swift in Sources */,
-				CEC1484328F11EE30058173E /* ImageDownloader.swift in Sources */,
 				CEC1484228F11EE30058173E /* GameDetailModel.swift in Sources */,
 				CE12E0C628F1A0E200C7874E /* FavoriteView.swift in Sources */,
 				CEC1484028F11EE30058173E /* GameModel.swift in Sources */,

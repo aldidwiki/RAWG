@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE11CF7C2925DBE2003563D6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */; };
 		CE12E0BD28F1995300C7874E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CE12E0BC28F1995300C7874E /* Realm */; };
 		CE12E0BF28F1995300C7874E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE12E0BE28F1995300C7874E /* RealmSwift */; };
 		CE12E0C228F199CC00C7874E /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0C128F199CC00C7874E /* RealmManager.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE12E0C128F199CC00C7874E /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		CE12E0C328F19AC500C7874E /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		CE12E0C528F1A0E200C7874E /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		CEC1481B28F11ACE0058173E = {
 			isa = PBXGroup;
 			children = (
+				CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */,
 				CEC1482628F11ACE0058173E /* RAWG */,
 				CEC1482528F11ACE0058173E /* Products */,
 			);
@@ -157,6 +160,7 @@
 				CEC1482028F11ACE0058173E /* Sources */,
 				CEC1482128F11ACE0058173E /* Frameworks */,
 				CEC1482228F11ACE0058173E /* Resources */,
+				CE11CF782925CB90003563D6 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -212,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11CF7C2925DBE2003563D6 /* .swiftlint.yml in Resources */,
 				CEC1482F28F11ACE0058173E /* Preview Assets.xcassets in Resources */,
 				CE78DF6528FC401F00BC8E8E /* RAWG-Info.plist in Resources */,
 				CEC1482C28F11ACE0058173E /* Assets.xcassets in Resources */,
@@ -219,6 +224,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE11CF782925CB90003563D6 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then \n    swiftlint \nelse \n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\" \nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEC1482028F11ACE0058173E /* Sources */ = {

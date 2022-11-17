@@ -12,8 +12,8 @@ struct GameItemView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: game.imageUrl) { Image in
-                Image.resizable()
+            AsyncImage(url: game.imageUrl) { image in
+                image.resizable()
                     .aspectRatio(contentMode: .fit)
             } placeholder: {
                 ProgressView()

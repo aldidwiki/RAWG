@@ -24,8 +24,8 @@ struct GameDetailView: View {
             } else {
                 ScrollView {
                     VStack {
-                        AsyncImage(url: gameDetail.imageUrl) { Image in
-                            Image.resizable()
+                        AsyncImage(url: gameDetail.imageUrl) { image in
+                            image.resizable()
                                 .aspectRatio(contentMode: .fit)
                         } placeholder: {
                             ProgressView()
@@ -98,7 +98,7 @@ struct GameDetailView: View {
 
 struct GameDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        GameDetailView(gameId: 3498,gameDetail: gameDetail)
+        GameDetailView(gameId: 3498, gameDetail: gameDetail)
             .environmentObject(RealmManager())
     }
 }

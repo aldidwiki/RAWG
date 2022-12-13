@@ -10,6 +10,10 @@
 		CE068DC7294853BD00EDA3D4 /* RAWGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE068DC6294853BD00EDA3D4 /* RAWGTests.swift */; };
 		CE068DE32948548900EDA3D4 /* RAWGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE068DE22948548900EDA3D4 /* RAWGUITests.swift */; };
 		CE068DE52948548900EDA3D4 /* RAWGUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE068DE42948548900EDA3D4 /* RAWGUITestsLaunchTests.swift */; };
+		CE068DEC294856DA00EDA3D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE068DEB294856DA00EDA3D4 /* Info.plist */; };
+		CE068DED294856DA00EDA3D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE068DEB294856DA00EDA3D4 /* Info.plist */; };
+		CE068DEF294856F700EDA3D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE068DEE294856F700EDA3D4 /* Info.plist */; };
+		CE068DF0294856F700EDA3D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE068DEE294856F700EDA3D4 /* Info.plist */; };
 		CE11CF7C2925DBE2003563D6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */; };
 		CE12E0BD28F1995300C7874E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CE12E0BC28F1995300C7874E /* Realm */; };
 		CE12E0BF28F1995300C7874E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE12E0BE28F1995300C7874E /* RealmSwift */; };
@@ -54,6 +58,8 @@
 		CE068DE02948548900EDA3D4 /* RAWGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAWGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE068DE22948548900EDA3D4 /* RAWGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAWGUITests.swift; sourceTree = "<group>"; };
 		CE068DE42948548900EDA3D4 /* RAWGUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAWGUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE068DEB294856DA00EDA3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE068DEE294856F700EDA3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE12E0C128F199CC00C7874E /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		CE12E0C328F19AC500C7874E /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				CE068DC6294853BD00EDA3D4 /* RAWGTests.swift */,
+				CE068DEB294856DA00EDA3D4 /* Info.plist */,
 			);
 			path = RAWGTests;
 			sourceTree = "<group>";
@@ -114,6 +121,7 @@
 			children = (
 				CE068DE22948548900EDA3D4 /* RAWGUITests.swift */,
 				CE068DE42948548900EDA3D4 /* RAWGUITestsLaunchTests.swift */,
+				CE068DEE294856F700EDA3D4 /* Info.plist */,
 			);
 			path = RAWGUITests;
 			sourceTree = "<group>";
@@ -322,6 +330,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE068DEF294856F700EDA3D4 /* Info.plist in Resources */,
+				CE068DEC294856DA00EDA3D4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE068DF0294856F700EDA3D4 /* Info.plist in Resources */,
+				CE068DED294856DA00EDA3D4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

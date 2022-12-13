@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE068DC7294853BD00EDA3D4 /* RAWGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE068DC6294853BD00EDA3D4 /* RAWGTests.swift */; };
 		CE11CF7C2925DBE2003563D6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */; };
 		CE12E0BD28F1995300C7874E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CE12E0BC28F1995300C7874E /* Realm */; };
 		CE12E0BF28F1995300C7874E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE12E0BE28F1995300C7874E /* RealmSwift */; };
@@ -28,7 +29,19 @@
 		CEC1484C28F135550058173E /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1484B28F135550058173E /* GameDetailView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE068DC8294853BD00EDA3D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC1481C28F11ACE0058173E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC1482328F11ACE0058173E;
+			remoteInfo = RAWG;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE068DC4294853BD00EDA3D4 /* RAWGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAWGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE068DC6294853BD00EDA3D4 /* RAWGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAWGTests.swift; sourceTree = "<group>"; };
 		CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE12E0C128F199CC00C7874E /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		CE12E0C328F19AC500C7874E /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
@@ -50,6 +63,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE068DC1294853BD00EDA3D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC1482128F11ACE0058173E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE068DC5294853BD00EDA3D4 /* RAWGTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE068DC6294853BD00EDA3D4 /* RAWGTests.swift */,
+			);
+			path = RAWGTests;
+			sourceTree = "<group>";
+		};
 		CE12E0C028F199B700C7874E /* LocalPersistent */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +112,7 @@
 			children = (
 				CE11CF7B2925DBE2003563D6 /* .swiftlint.yml */,
 				CEC1482628F11ACE0058173E /* RAWG */,
+				CE068DC5294853BD00EDA3D4 /* RAWGTests */,
 				CEC1482528F11ACE0058173E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC1482428F11ACE0058173E /* RAWG.app */,
+				CE068DC4294853BD00EDA3D4 /* RAWGTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +183,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE068DC3294853BD00EDA3D4 /* RAWGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE068DCA294853BD00EDA3D4 /* Build configuration list for PBXNativeTarget "RAWGTests" */;
+			buildPhases = (
+				CE068DC0294853BD00EDA3D4 /* Sources */,
+				CE068DC1294853BD00EDA3D4 /* Frameworks */,
+				CE068DC2294853BD00EDA3D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE068DC9294853BD00EDA3D4 /* PBXTargetDependency */,
+			);
+			name = RAWGTests;
+			productName = RAWGTests;
+			productReference = CE068DC4294853BD00EDA3D4 /* RAWGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEC1482328F11ACE0058173E /* RAWG */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC1483728F11ACE0058173E /* Build configuration list for PBXNativeTarget "RAWG" */;
@@ -182,9 +230,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					CE068DC3294853BD00EDA3D4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CEC1482328F11ACE0058173E;
+					};
 					CEC1482328F11ACE0058173E = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -207,11 +259,19 @@
 			projectRoot = "";
 			targets = (
 				CEC1482328F11ACE0058173E /* RAWG */,
+				CE068DC3294853BD00EDA3D4 /* RAWGTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE068DC2294853BD00EDA3D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC1482228F11ACE0058173E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +308,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE068DC0294853BD00EDA3D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE068DC7294853BD00EDA3D4 /* RAWGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC1482028F11ACE0058173E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,7 +338,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CE068DC9294853BD00EDA3D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC1482328F11ACE0058173E /* RAWG */;
+			targetProxy = CE068DC8294853BD00EDA3D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CE068DCB294853BD00EDA3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PV2Q92Y99P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aldidwiki.RAWGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAWG.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RAWG";
+			};
+			name = Debug;
+		};
+		CE068DCC294853BD00EDA3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PV2Q92Y99P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aldidwiki.RAWGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAWG.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RAWG";
+			};
+			name = Release;
+		};
 		CEC1483528F11ACE0058173E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE068DCA294853BD00EDA3D4 /* Build configuration list for PBXNativeTarget "RAWGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE068DCB294853BD00EDA3D4 /* Debug */,
+				CE068DCC294853BD00EDA3D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEC1481F28F11ACE0058173E /* Build configuration list for PBXProject "RAWG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

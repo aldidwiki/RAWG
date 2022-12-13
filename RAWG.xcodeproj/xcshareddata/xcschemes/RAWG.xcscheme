@@ -39,6 +39,17 @@
                ReferencedContainer = "container:RAWG.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE068DDF2948548900EDA3D4"
+               BuildableName = "RAWGUITests.xctest"
+               BlueprintName = "RAWGUITests"
+               ReferencedContainer = "container:RAWG.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
